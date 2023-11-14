@@ -1,0 +1,7 @@
+url = "https://advantasms/api/services/sendsms/";
+message = "Dear " + name + ", your ticket has been closed. Thank you for choosing our services.";
+headers = Map();
+headers.put("Content-Type","application/json");
+bodyString = '{"apikey":"xxxxxxx","partnerID":xxxxx,"message":"' + message + '","shortcode":"xxxxxxx","mobile":"' + contact + '"}';
+response = postUrl(url,bodyString,headers);
+info response;
